@@ -1,0 +1,64 @@
+User Management Dashboard in Django
+Overview
+This project provides a modern user management system built with Django, featuring a decorative resume-style dashboard with dynamic educational management and other profile functionalities. It allows users to view and update their personal details, manage multiple degrees, and explore a list of all registered users with individual user detail views.
+
+Features
+1. User Authentication
+Login, Logout, and Registration functionality.
+User dashboard accessible only after logging in.
+Profile picture upload and secure session management.
+2. Resume-Style Dashboard
+Decorative dashboard design with a gradient background and styled elements.
+Display of personal information (name, email, phone number, date of birth).
+Dynamic education management:
+Add multiple education entries (Board/University, Degree, Percentage, Year).
+Real-time addition and deletion of education rows using JavaScript.
+3. Users List and User Detail Pages
+View all registered users in a table with clickable names.
+User detail pages showing individual profiles with essential details.
+Technologies Used
+Django 5.0.6: Backend framework for authentication and data management.
+Bootstrap 5: Frontend framework for responsive and modern UI design.
+JavaScript: For dynamic education management on the dashboard.
+SQLite: Default database for local development.
+HTML/CSS: For layout and styling.
+How to Run the Project
+Clone the Repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/divyanshu.git
+cd divyanshu
+Create a Virtual Environment:
+
+bash
+Copy code
+python -m venv venv
+source venv/bin/activate  # For Linux/macOS
+venv\Scripts\activate  # For Windows
+Install Dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Apply Database Migrations:
+
+bash
+Copy code
+python manage.py makemigrations users
+python manage.py migrate
+Run the Server:
+
+bash
+Copy code
+python manage.py runserver
+Access the Application: Open a browser and visit:
+
+arduino
+Copy code
+http://127.0.0.1:8000/
+Future Enhancements
+Email verification for user registration.
+Password reset feature for forgotten passwords.
+Two-factor authentication for added security.
+Dark mode toggle for enhanced user experience.
